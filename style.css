@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --success-messege:#07f71366 ;
+    --error-messege: #f7070766;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0e0c11;
+    color: #fff;
+    margin: 0;
+}
+
+.container{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 50px 40px;
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+}
+#form{
+    margin: 5px;
+}
+
+.formcontrol{
+    margin: 10px 0px;
+}
+.formcontrol label{
+    display: block;
+    margin: 10px 0px;
+}
+
+.formcontrol input{
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 4px 5px;
+    border-radius: 4px;
+    margin: 5px 3px;
+    font-size: 16px;
+    background-color: #f3f3f3;
+}
+.formcontrol input:focus{
+    outline: 0;
+}
+
+.formcontrol small{
+    margin: 3px 4px;
+    visibility: hidden;
+}
+
+#form button{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(0, 119, 255);
+    font-size: 22px;
+    border: 0;
+    border-radius: 3px;
+    margin-top: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.formcontrol.success input{
+    box-shadow: 0px 0px 10px rgb(0, 255, 0);
+}
+.container.success{
+    box-shadow: 0px 3px 10px rgb(0, 255, 0);
+}
+
+.formcontrol.error input{
+    box-shadow: 0px 0px 10px rgb(235, 10, 10);
+
+}
+.container.error{
+    box-shadow: 0px 3px 10px rgb(235, 10, 10);
+}
+
+.formcontrol.error small{
+    color: var(--error-messege);
+    visibility: visible;
+}
+
+
+
+
+
+
